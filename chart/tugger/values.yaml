@@ -112,3 +112,6 @@ readinessProbe:
   timeoutSeconds: 3
   failureThreshold: 1
   successThreshold: 1
+
+imagePullTimeout:
+  timeoutSeconds: 10

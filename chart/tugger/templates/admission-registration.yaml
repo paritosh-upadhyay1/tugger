@@ -84,6 +84,7 @@ webhooks:
       path: "/mutate"
       port: {{ .Values.service.port }}
     caBundle: {{ b64enc $caCert }}
+  timeoutSeconds: {{ .Values.imagePullTimeout.timeoutSeconds }}
 {{- end }}
 
 {{- if not .Values.tls.secretName }}
